@@ -1,10 +1,25 @@
 <script>
   let count = 0;
-  // reactive declaration
+  // ***** reactive declaration *****
   $: doubled = count * 2;
 
   function handleClick() {
     count += 1;
+  }
+
+  // ***** reactive statements *****
+  $: console.log(`the count is ${count}`);
+  //   You can easily group statements together with a block:
+  $: {
+    console.group("---------block statement--------");
+    console.log(`the count is ${count}`);
+    console.log(`I SAID THE COUNT IS ${count}`);
+    console.groupEnd()
+  }
+  // You can even put the $: in front of things like if blocks:
+  $: if (count >= 10) {
+    alert(`count is dangerously high`);
+    count = 9;
   }
 </script>
 
