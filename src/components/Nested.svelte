@@ -1,4 +1,5 @@
 <script>
+  // export = to receive props from out
   export let answer = 123456;
 </script>
 

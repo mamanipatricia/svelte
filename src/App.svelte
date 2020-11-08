@@ -2,10 +2,20 @@
   import Nested from "./components/Nested.svelte";
   import Button from "./components/Button.svelte";
   import UpdatingData from "./components/UpdatingData.svelte";
+  import PersonalInformation from "./components/PersonalInformation.svelte";
 
   let name = "world!!!!!!";
   let src = "https://catalog.redhat.com/img/svg/logo.svg";
   let text = "this is a text, look at <strong> this </strong>";
+
+  const info = {
+    name: "Patricia",
+    profession: "Computer Science",
+    age: 26,
+    website: "patriciamq.xyz",
+	github: "mamanipatricia",
+	series: ["got", "devs", "dead note", "TBBT", "suits", "OUAT", "The walking Dead"]
+  };
 </script>
 
 <style>
@@ -29,3 +39,5 @@
 
 <Button />
 <UpdatingData />
+
+<PersonalInformation {...info} />
