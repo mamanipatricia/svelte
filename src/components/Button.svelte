@@ -14,13 +14,14 @@
     console.group("---------block statement--------");
     console.log(`the count is ${count}`);
     console.log(`I SAID THE COUNT IS ${count}`);
-    console.groupEnd()
+    console.groupEnd();
   }
   // You can even put the $: in front of things like if blocks:
   $: if (count >= 10) {
     alert(`count is dangerously high`);
     count = 9;
   }
+
 </script>
 
 <button on:click={handleClick}>
