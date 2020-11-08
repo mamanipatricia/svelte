@@ -1,5 +1,7 @@
 <script>
   import Nested from "./components/Nested.svelte";
+  import Button from "./components/Button.svelte";
+
   let name = "world!!!!!!";
   let src = "https://catalog.redhat.com/img/svg/logo.svg";
   let text = "this is a text, look at <strong> this </strong>"
@@ -22,3 +24,5 @@
 <p>
   {@html text}
 </p>
+
+<Button />
