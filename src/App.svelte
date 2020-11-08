@@ -20,6 +20,7 @@
 <img {src} alt="{name} A red hat" />
 
 <p>This is a paragraph</p>
+<Nested answer={11111122222} />
 <Nested />
 
 <p>
