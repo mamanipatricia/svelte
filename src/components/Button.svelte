@@ -21,7 +21,6 @@
     alert(`count is dangerously high`);
     count = 9;
   }
-
 </script>
 
 <button on:click={handleClick}>
@@ -33,3 +32,12 @@
 <br />
 <p>{count} doubled is {doubled}</p>
 <p style="color: red">{count} doubled is {count * 2}</p>
+
+<!-- else if blocks -->
+{#if count > 7}
+  <p>{count} is greater than 7</p>
+{:else if 5 > count}
+  <p>{count} is less than 5</p>
+{:else}
+  <p>{count} is between 5 and 7</p>
+{/if}
