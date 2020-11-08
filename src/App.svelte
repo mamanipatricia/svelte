@@ -4,6 +4,7 @@
   import UpdatingData from "./components/UpdatingData.svelte";
   import PersonalInformation from "./components/PersonalInformation.svelte";
   import Login from "./components/Login.svelte";
+  import Loop from "./components/Beer/Loop.svelte";
 
   let name = "world!!!!!!";
   let src = "https://catalog.redhat.com/img/svg/logo.svg";
@@ -51,3 +52,4 @@
 
 <PersonalInformation {...info} />
 <Login />
+<Loop />
