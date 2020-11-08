@@ -3,6 +3,7 @@
   import Button from "./components/Button.svelte";
   import UpdatingData from "./components/UpdatingData.svelte";
   import PersonalInformation from "./components/PersonalInformation.svelte";
+  import Login from "./components/Login.svelte";
 
   let name = "world!!!!!!";
   let src = "https://catalog.redhat.com/img/svg/logo.svg";
@@ -13,8 +14,16 @@
     profession: "Computer Science",
     age: 26,
     website: "patriciamq.xyz",
-	github: "mamanipatricia",
-	series: ["got", "devs", "dead note", "TBBT", "suits", "OUAT", "The walking Dead"]
+    github: "mamanipatricia",
+    series: [
+      "got",
+      "devs",
+      "dead note",
+      "TBBT",
+      "suits",
+      "OUAT",
+      "The walking Dead",
+    ],
   };
 </script>
 
@@ -41,3 +50,4 @@
 <UpdatingData />
 
 <PersonalInformation {...info} />
+<Login />
